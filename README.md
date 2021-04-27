@@ -1,6 +1,6 @@
 # ZSH quickjump plugin
 
-Adds tab completion support for [skim](https://github.com/lotabout/skim) for recent files and directories using [fasd](https://github.com/whjvenyl/fasd).
+Adds tab completion support for [fzf](https://github.com/junegunn/fzf) for recent files and directories using [fasd](https://github.com/whjvenyl/fasd).
 The following three commands are supported:
 
 ```sh

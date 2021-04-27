@@ -32,7 +32,7 @@ __quickjump_zsh_completion() {
 
   local count=$(echo "$matches" | wc -l)
   if [[ $count -gt 1 ]]; then
-    cmdf=(sk --prompt="$cmd> " --query="$slug" --tac --no-sort --no-multi --bind "shift-tab:up,tab:down" --reverse --height 40%)
+    cmdf=(fzf --prompt="$cmd> " --query="$slug" --no-sort --no-multi --bind "shift-tab:up,tab:down" --reverse --height 40%)
     selected=$(echo "$matches" | $cmdf)
   elif [[ "$count" -eq 1 ]]; then
     selected=$matches
