@@ -43,9 +43,6 @@ __quickjump_zsh_completion() {
   # return completion result with $selected
   if [[ -n "$selected" ]]; then
     selected=$(printf %q "$selected")
-    if [ "$cmd" = "j" -a "$selected" != */ ]; then
-      selected="${selected}/"
-    fi
     LBUFFER="$cmd $selected"
   fi
 
